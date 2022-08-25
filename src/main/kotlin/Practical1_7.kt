@@ -1,4 +1,4 @@
-//20012011031_Nishant Darji_AB11
+//20012011031_Nishant Darji_AB11_C
 fun main() {
     print("Enter a number : ")
     var number : Int = Integer.valueOf(readLine())
