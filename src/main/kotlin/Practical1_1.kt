@@ -1,5 +1,4 @@
 // 20012011031_Nishant Darji_AB11_C
-
 fun main(){
     val a: Int = 22
     val b: Float = 1.5f

@@ -1,6 +1,6 @@
 // 20012011031_Nishant Darji_AB11_C
-fun main() {
-
+fun main()
+{
     val obj = ArrayList<Laptop> (6)
 
     obj.add(Laptop())
@@ -10,14 +10,19 @@ fun main() {
     obj.add(Laptop("Ryzen 9",18,2000,"Dell Laptop",1,85000))
     obj.add(Laptop("Ryzen 7",4,10000,"Dell Laptop",1,100000))
 
-    for (i in obj){
+    for (i in obj)
+    {
         i.laptop()
+        println("----------------------------")
     }
 
 }
-open class Product(private var name: String, private var qty: Int, private var amt: Int) {
+open class Product(private var name: String, private var qty: Int, private var amt: Int)
+{
 
-    fun product() {
+    fun product()
+    {
+        println("\n Laptop Details : \n")
         println("Name : $name")
         println("Qty : $qty")
         println("Amount : $amt")
@@ -27,13 +32,16 @@ open class Product(private var name: String, private var qty: Int, private var a
 class Laptop(
     private var cpu: String, private var ram: Int, private var hdd: Int,
     name: String, qty: Int, amt: Int
-) : Product(name, qty, amt) {
+) : Product(name, qty, amt)
+{
 
-    constructor() : this("None", 0, 0, 0, "None", 0, 0) {
+    constructor() : this("None", 0, 0, "None", 0, 0)
+    {
         println("Secondary Constructor")
     }
 
-    fun laptop() {
+    fun laptop()
+    {
         product()
         println("CPU Name : $cpu")
         println("RAM Size : $ram GB")

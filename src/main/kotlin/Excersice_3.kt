@@ -1,5 +1,7 @@
-// 20012011031_Nishant Darji_AB11_C
-fun main() {
+//20012011031_Nishant Darji_AB11_C
+fun main()
+{
+
     val obj = ArrayList<Student> (6)
 
     obj.add(Student())
@@ -9,14 +11,16 @@ fun main() {
     obj.add(Student("20012022123","IT","D","AB5","Droan","Acharya", 18))
     obj.add(Student("21112022010","CE-AI","B","AB6","Rohan","Patel",17))
 
-    for (i in obj){
+    for (i in obj)
+    {
         i.details()
         i.studentinfo()
+        println("----------------------------")
     }
 
 }
-open class Person(private val fname: String, private val lname: String, private val age: Int) {
-
+open class Person(private val fname: String, private val lname: String, private val age: Int)
+{
     fun details() {
         println("First Name = $fname")
         println("Last Name = $lname")
@@ -24,16 +28,20 @@ open class Person(private val fname: String, private val lname: String, private 
     }
 }
 
-class Student(private val enroll: String,private val branch: String,private val class: String,private val batch: String,fname: String,lname: String,age: Int) : Person(fname, lname, age) {
+class Student(private val enroll: String,private val branch: String,private val Class: String,private val batch: String,fname: String,lname: String,age: Int) : Person(fname, lname, age)
+{
 
-    constructor() : this("NaN", "NaN", "NaN", "NaN", "NaN", "NaN", 0) {
+    constructor() : this("NaN", "NaN", "NaN", "NaN", "NaN", "NaN", 0)
+    {
         println("Secondary Constructor")
     }
 
-    fun studentinfo() {
+    fun studentinfo()
+    {
         println("Enrollment Number : $enroll")
         println("Branch : $branch")
-        println("Class : $class")
+        println("Class : $Class")
         println("Batch : $batch")
     }
 }
+
